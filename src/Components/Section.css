@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    
+}
+.blocos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px; 
+    padding: 20px;
+   
+  }
+
+  .grid-image{
+    width: 100%;
+  }
+  
+  .grid-item {
+    background-color: #333; 
+    color: #fff; 
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid transparent; 
+    width: 130px;
+    border-radius: 10px; 
+    transition: 0.3s ease;
+    
+  }
+  .light{
+    background-color: #fff;
+    color: #222;
+    border: 2px solid #111; 
+  }
+  
+ 
+  .grid-item:hover {
+    scale: 1.1;
+    filter: drop-shadow(0 0 0.5em #646cffaa);
+    cursor: pointer; 
+  }
+  
