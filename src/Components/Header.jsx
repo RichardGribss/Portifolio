@@ -11,7 +11,6 @@ function Header({theme, trocaTema}) {
             <img src={logo} width={70} className='logo-img'/>
             <h2>Meu Portifólio</h2>
             
-        
               <div className={`botao-tema ${theme ? 'active' : ''}`} onClick={trocaTema} >
                 <div className="bola" ></div>
               </div>

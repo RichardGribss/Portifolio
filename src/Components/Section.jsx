@@ -1,12 +1,19 @@
 import React from 'react'
 import "./Section.css"
+import sec1 from "./img/sec1.webp"
+import sec2 from "./img/sec2.png"
+import sec3 from "./img/sec3.png"
+import sec4 from "./img/sec4.webp"
+import sec5 from "./img/sec5.png"
+import sec6 from "./img/sec6.png"
+
 const blocks = [
-  {nome:"HTML",img:"https://cdn.iconscout.com/icon/free/png-256/free-html-5-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175208.png?f=webp&w=256"},
-  {nome:"CSS",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/768px-CSS3_logo.svg.png"},
-  {nome:"JS",img:"https://cdn-icons-png.flaticon.com/512/5968/5968292.png"},
-  {nome:"React",img:"https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"},
-  {nome:"PHP",img:"https://static-00.iconduck.com/assets.00/php-icon-256x256-oq5bc0bt.png"},
-  {nome:"SQL",img:"https://www.freeiconspng.com/thumbs/sql-server-icon-png/sql-server-icon-png-29.png"}
+  {nome:"HTML",img:sec1},
+  {nome:"CSS",img:sec2},
+  {nome:"JS",img:sec3},
+  {nome:"React",img:sec4},
+  {nome:"PHP",img:sec5},
+  {nome:"SQL",img:sec6}
 ]
 
 function Section({ theme }) {

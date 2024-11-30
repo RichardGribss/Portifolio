@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 import Header from './Components/Header'
 import Home from './Components/Home'
+import Emobile from './Components/Emobile'
 import Section from './Components/Section'
 import Footer from './Components/Footer'
 
@@ -21,9 +22,10 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='app'>
       <Header theme={theme} trocaTema={trocaTema} />
       <Home />
+      <Emobile />
       <Section theme={theme} />
       <Footer />
     </div>    

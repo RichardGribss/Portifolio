@@ -1,10 +1,12 @@
 .header{
    position: fixed;
-   width: 100vw;
+   width: 100%;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
    background-color: #2b2b40;
    z-index: 2;
 }
+
+
 .header.active{
   background-color: #fff;
 }
@@ -14,7 +16,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
   }
   .logo-img{
       transition:  300ms;

@@ -7,16 +7,16 @@
   background-repeat: no-repeat;
   width: 99vw;
   height: 100vh;
-
   border-bottom: 1px solid #222;
 }
 
 .inicio p {
-
+  line-height: 1.7;
   font-size: 1.4em;
-  
-  animation: paragrafo 1.8s ease;
+  box-sizing: border-box;
   text-align: center;
+  animation: paragrafo 1.8s ease;
+   padding-left: 5%;
 }
 
 @keyframes paragrafo {
@@ -36,10 +36,15 @@ aside {
   width: 65%;
   display: flex;
   height: 100vh;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  
+}
+
+@media (max-width: 768px) {
+  aside { 
+    width: 100%;
+  }
 }
 
 .text {
@@ -77,7 +82,7 @@ aside {
 @media (min-width: 651px) and (max-width: 920px) {
   .text {
     font-size: 1.5rem;
-    width: 630px;
+    width: 278px;
     animation: typewriter 2s steps(30) 1s normal both,
       textCursor 500ms steps(30) infinite normal;
   }
@@ -88,15 +93,16 @@ aside {
     }
 
     to {
-      width: 630px;
+      width: 278px;
     }
   }
 }
 
 @media (max-width: 650px) {
   .text {
-    font-size: 1rem;
-    width: 270px;
+    margin-top: 50%;
+    font-size: 1.5rem;
+    width: 190px;
     animation: typewriter 2s steps(20) 1s normal both,
       textCursor 500ms steps(42) infinite normal;
   }
@@ -107,7 +113,7 @@ aside {
     }
 
     to {
-      width: 270px;
+      width: 278px;
     }
   }
 }
@@ -129,7 +135,6 @@ aside {
 
 .copiar h3 {
   padding-inline: 10px;
-
 }
 
 .animacao {
@@ -159,11 +164,37 @@ aside {
     height: 300%;
   }
 }
+.copiado{
+  position: relative;
+      display: inline-block;
+      max-width: 300px;
+     
+      padding: 15px;
+      background-color: #e8e8e8;
+      color: rgb(27, 27, 27);
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.4);
+}
+.copiado::after{
+  content: "";
+      position: absolute;
+      bottom: -10px; 
+      left: 50%; 
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 10px 0 10px; /* Ajusta o tamanho da ponta */
+      border-color: #e8e8e8 transparent transparent transparent;
+}
 .conexoes{
   display: flex;
   justify-content: space-around;
-  width: 100px;
+  width: 160px;
 }
+
 a img:hover{
   transition: 0.2s;
   scale: 1.2;
